@@ -1,34 +1,34 @@
 import csv
 import random
 
-def mark():
+def mark():##ドットを追加
     dotli = ['     ■  ■']
     underd = ['        ■']
     return dotli,underd
 
-def oono0 ():
+def oono0 ():##日本語
     voc = []
-    with open ('ooba.csv','r') as e :
+    with open ('任意の.csv','r') as e :
         csvv = csv.reader(e)
         for o in csvv :
             voc.append(o)
     return voc
     pass
-def oono ():
+def oono ():##英語
     ass = []
-    with open ('nihonja.csv','r') as f :
+    with open ('任意の.csv','r') as f :
         a = csv.reader(f)
         for i in a :
             ass.append(i)
     return ass
-def choiceng():
+def choiceng():##ランダムに英単語を抽出
     jcon = []
     engg =[]
     engli = oono0()
     japo = oono()
     eng = random.sample(engli,20)
     return eng
-def addjap():
+def addjap():##対応する日本語訳を追加
     ull =[]
     eigo1=[]
     eigo = choiceng()
@@ -44,7 +44,7 @@ def addjap():
         ull.append(yyc)
     return eigo1 , ull
 
-
+##整形してリストに追加
 levels = []
 er,re = mark()
 ae = oono()
