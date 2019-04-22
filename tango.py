@@ -64,11 +64,7 @@ levels.extend(list(er))
 levels.extend(d)
 levels.extend(list(re))
 print(levels)
-anal = open("tunaki.csv","w",encoding="utf_8_sig")
+anal = open("任意のファイル名.csv","w",encoding="utf_8_sig")
 anal1 = csv.writer(anal)
 anal1.writerows(levels)
 anal.close()
-
-#with open ('otinpo.csv','w') as f:
-    #mankov = csv.writer(f)
-    #mankov.writerows(tinko)
