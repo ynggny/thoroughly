@@ -8,7 +8,7 @@ def mark():##ドットを追加
 
 def oono0 ():##日本語
     voc = []
-    with open ('任意の.csv','r') as e :
+    with open ('japanese.csv','r') as e :
         csvv = csv.reader(e)
         for o in csvv :
             voc.append(o)
@@ -16,7 +16,7 @@ def oono0 ():##日本語
     pass
 def oono ():##英語
     ass = []
-    with open ('任意の.csv','r') as f :
+    with open ('english.csv','r') as f :
         a = csv.reader(f)
         for i in a :
             ass.append(i)
@@ -64,7 +64,7 @@ levels.extend(list(er))
 levels.extend(d)
 levels.extend(list(re))
 print(levels)
-anal = open("任意のファイル名.csv","w",encoding="utf_8_sig")
-anal1 = csv.writer(anal)
-anal1.writerows(levels)
+writeing = open("任意のファイル名.csv","w",encoding="utf_8_sig")#英単語帳の出力
+writeng = csv.writer(writeing)
+writeng.writerows(levels)
 anal.close()
